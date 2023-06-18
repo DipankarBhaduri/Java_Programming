@@ -1,4 +1,4 @@
-package streamApi;
+package com.Java_Programming.streamApi;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,29 +14,29 @@ public class Filter {
         ans.stream().forEach(name -> System.out.print(name+" "));
         System.out.println();
 
-        student s1 = new student("Dipankar", 25 , "Btech") ;
-        student s2 = new student("Suvodeep", 24 , "Btech") ;
-        student s3 = new student("Arijit", 25 , "Btech") ;
-        student s4 = new student("Saheb", 26 , "Diploma") ;
+        Student s1 = new Student("Dipankar", 25 , "Btech") ;
+        Student s2 = new Student("Suvodeep", 24 , "Btech") ;
+        Student s3 = new Student("Arijit", 25 , "Btech") ;
+        Student s4 = new Student("Saheb", 26 , "Diploma") ;
 
         List<String> names = List.of("Dipankar","Saheb") ;
 
-        List<student> studentList = List.of(s1,s2,s3,s4) ;
+        List<Student> studentList = List.of(s1,s2,s3,s4) ;
 
-        List<student> students = studentList.stream()
-                .filter( student -> names.contains(student.getName())).collect(Collectors.toList()); ;
+        List<Student> Students = studentList.stream()
+                .filter(Student -> names.contains(Student.getName())).collect(Collectors.toList()); ;
 
-        students.stream().forEach(student -> System.out.println(student.getName()));
+        Students.stream().forEach(Student -> System.out.println(Student.getName()));
     }
 }
 
 
-class student {
+class Student {
     String name ;
     int age ;
     String qualification ;
 
-    student ( String name , int age , String qualification ){
+    Student(String name , int age , String qualification ){
         this.name =name ;
         this.age = age ;
         this.qualification = qualification ;

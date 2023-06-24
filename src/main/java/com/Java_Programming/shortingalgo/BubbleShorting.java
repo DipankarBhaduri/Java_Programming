@@ -1,4 +1,4 @@
-package com.Java_Programming.basicShortingAlgo;
+package com.Java_Programming.shortingalgo;
 
 public class BubbleShorting {
     public static void main(String[] args) {

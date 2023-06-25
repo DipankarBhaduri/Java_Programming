@@ -1,4 +1,4 @@
-package com.Java_Programming._07_variablesAndDatatypes;
+package com.Java_Programming.alpha._07_variablesAndDatatypes;
 
 public class TypePromotion {
     public static void main(String[] args) {

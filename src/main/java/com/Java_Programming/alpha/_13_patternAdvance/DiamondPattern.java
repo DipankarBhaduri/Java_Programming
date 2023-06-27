@@ -9,6 +9,7 @@ public class DiamondPattern {
         printDiamondPattern(line);
     }
     public static void printDiamondPattern ( int line ){
-
+        for ( int i = 1 ; i <= line / 2 ; i++ ){
+        }
     }
 }

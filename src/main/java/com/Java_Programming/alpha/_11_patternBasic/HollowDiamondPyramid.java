@@ -8,6 +8,7 @@ public class HollowDiamondPyramid {
         int line = sc.nextInt() ;
         printHollowDiamondPyramid(line);
     }
+
     public static void printHollowDiamondPyramid ( int line ){
         for ( int i = 1 ; i <= line ; i++ ){
             for ( int j = 1 ; j < line - i + 1 ; j++ ){

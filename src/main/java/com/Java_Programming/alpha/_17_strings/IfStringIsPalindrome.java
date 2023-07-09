@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class IfStringIsPalindrome {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in) ;
+
         String str = "racecare" ;
+        System.out.println(str);
         boolean response = checkIfStringIsPalindrome(str) ;
         System.out.println(response);
     }

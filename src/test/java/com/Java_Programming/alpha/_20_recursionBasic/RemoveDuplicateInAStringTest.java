@@ -11,7 +11,7 @@ class RemoveDuplicateInAStringTest {
 
     @Test
     void removeDuplicateFromString() {
-        String str = RemoveDuplicateInAString.removeDuplicateFromString( "ddddiiiiipppppaaaaannnnnnkkkkkkaaaaarrrr" , new HashSet<>()) ;
+        String str = RemoveDuplicateInAString.removeDuplicateFromString( "ddiippaaannkkarr" , new HashSet<>()) ;
         Assertions.assertEquals(7 , str.length());
         assertTrue(str.equals("dipankr"));
 

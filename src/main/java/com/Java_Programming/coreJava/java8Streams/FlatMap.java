@@ -11,6 +11,16 @@ public class FlatMap {
 
         list.stream().filter( string -> !string.equals("saheb")).forEach(System.out::println);
 
+        int x = 3 ;
+        int y = 2 ;
+        for ( int i = 1 ; i < 5 ; i++ ){
+            if ( i < --x || y++ > i ){
+                y++ ;
+                i += 1 ;
+            }
+        }
+        System.out.println( x +" "+ y );
+
 
     }
 }

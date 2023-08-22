@@ -30,5 +30,6 @@ public class FilterAndForeach {
                 .collect(Collectors.toList()) ;
 
 
+
     }
 }

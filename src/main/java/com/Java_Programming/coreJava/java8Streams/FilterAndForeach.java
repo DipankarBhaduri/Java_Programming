@@ -6,9 +6,10 @@ import java.util.stream.Collectors;
 
 public class FilterAndForeach {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>(List.of("Dipankar" ,
-                "Pritam" , "Suvodeep" , "pritam" , "Arijit" , "Souvik" ,"pritam" , "Arijit" , "Souvik" ,
-                "Surja" , "saheb")) ;
+        List<String> list = new ArrayList<>(List.of("1" ,
+                "2" , "3" )) ;
+        List<String> list2 = new ArrayList<>(List.of("Dipankar" ,
+                "Pritam" , "Suvodeep")) ;
 
         list.stream().filter(name -> name.equals("pritam")).forEach(System.out::println);
 
@@ -28,6 +29,10 @@ public class FilterAndForeach {
                  .filter(name -> (name.startsWith("s") || name.startsWith("S") || name.startsWith("D") ||name.startsWith("A")))
                 .distinct()
                 .collect(Collectors.toList()) ;
+
+         for ( int i = 0 ; i < 5 ; i++ ){
+
+         }
 
 
 

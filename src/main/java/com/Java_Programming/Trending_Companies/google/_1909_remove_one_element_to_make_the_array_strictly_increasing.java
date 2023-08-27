@@ -20,11 +20,14 @@ public class _1909_remove_one_element_to_make_the_array_strictly_increasing {
         System.out.println(response);
     }
     public static boolean removeOneElementToMakeTheArrayStrictlyIncreasing (int[] nums) {
-        if ( nums.length < 3 ){
-            return true ;
+        if (nums.length < 3) {
+            return true;
         }
         int count = 0;
-        for (int i = 0; i< nums.length - 1 ; i++) {
-            if (nums[i] > )
+        for (int i = 0; i < nums.length - 1; i++) {
+
         }
+
+        return false;
+    }
 }

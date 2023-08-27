@@ -1,8 +1,4 @@
-package com.Java_Programming.Trending_Companies.google;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+package com.Java_Programming.trendingCompanies.google;
 
 public class _1909_remove_one_element_to_make_the_array_strictly_increasing {
     /**

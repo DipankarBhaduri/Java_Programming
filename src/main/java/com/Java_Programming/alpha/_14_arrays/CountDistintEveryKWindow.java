@@ -1,4 +1,4 @@
-package com.Java_Programming.problemSolving;
+package com.Java_Programming.alpha._14_arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;

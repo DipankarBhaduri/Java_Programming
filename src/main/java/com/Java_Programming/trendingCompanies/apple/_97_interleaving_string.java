@@ -1,4 +1,4 @@
-package com.Java_Programming.Trending_Companies.apple;
+package com.Java_Programming.trendingCompanies.apple;
 
 public class _97_interleaving_string {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.Java_Programming.Trending_Companies.microsoft;
+package com.Java_Programming.trendingCompanies.microsoft;
 import java.util.*;
 
 public class _229_majority_element_ii {

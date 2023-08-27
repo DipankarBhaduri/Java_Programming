@@ -1,4 +1,4 @@
-package com.Java_Programming.Trending_Companies.google;
+package com.Java_Programming.trendingCompanies.google;
 
 public class _09_palindrome_number {
     /**

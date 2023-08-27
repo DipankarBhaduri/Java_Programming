@@ -1,4 +1,4 @@
-package com.Java_Programming.problemSolving;
+package com.Java_Programming.alpha._09_conditions;
 
 public class SecondMax {
     public static void main(String[] args) {

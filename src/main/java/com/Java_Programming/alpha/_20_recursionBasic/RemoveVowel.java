@@ -1,4 +1,4 @@
-package com.Java_Programming.problemSolving;
+package com.Java_Programming.alpha._20_recursionBasic;
 
 import java.util.HashMap;
 import java.util.Map;

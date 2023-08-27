@@ -1,4 +1,4 @@
-package com.Java_Programming.Trending_Companies.google;
+package com.Java_Programming.trendingCompanies.google;
 
 import java.util.Stack;
 

@@ -10,7 +10,7 @@ public class FindAllSubsetsInArray {
     }
     private static void findAllSubsetsUsingBackTracking(int[] arr, int i, List<Integer> list) {
         if (i == arr.length) {
-            if(list != null && list.size() > 0) {
+            if (list != null && list.size() > 0) {
                 System.out.println(list);
             }
             return;

@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practiceProblems;
+package com.Java_Programming.coreJava.java8Streams.practiceProblemsBasic;
 
 import com.Java_Programming.coreJava.java8Streams.filter.Person;
 

@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practiceProblems;
+package com.Java_Programming.coreJava.java8Streams.practiceProblemsBasic;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Book {
-    private String nameOfBook;
-    private String genre;
+public class Order {
+    private int transactionId;
+    private int totalPrice;
 }

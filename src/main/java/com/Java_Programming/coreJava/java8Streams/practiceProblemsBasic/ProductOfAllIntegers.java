@@ -1,8 +1,7 @@
-package com.Java_Programming.coreJava.java8Streams.practiceProblems;
+package com.Java_Programming.coreJava.java8Streams.practiceProblemsBasic;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ProductOfAllIntegers {
     /**

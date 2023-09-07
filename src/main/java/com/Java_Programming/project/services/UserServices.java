@@ -13,13 +13,21 @@ import java.util.List;
 public class UserServices {
 
     @Autowired
-    private UserRepository yourEntityRepository ;
+    private UserRepository userRepository ;
 
     public void saveEntity(ApplicationUser entity) {
-        yourEntityRepository.save(entity);
+        userRepository.save(entity);
+    }
+
+    public void saveEntityInBulk(List<ApplicationUser> applicationUsers) {
+        userRepository.saveAll(applicationUsers);
     }
 
     public List<ApplicationUser> findEntity() {
-        return yourEntityRepository.findAll();
+        return userRepository.findAll();
+    }
+
+    public void deleteEntity(List<String> applicationUserList) {
+        userRepository.deleteAllById(applicationUserList);
     }
 }

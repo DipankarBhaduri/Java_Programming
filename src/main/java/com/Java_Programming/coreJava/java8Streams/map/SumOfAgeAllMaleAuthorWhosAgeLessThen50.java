@@ -1,6 +1,6 @@
 package com.Java_Programming.coreJava.java8Streams.map;
 
-import com.Java_Programming.coreJava.java8Streams.practiceProblemsBasic.Book;
+import com.Java_Programming.coreJava.java8Streams.practiceProblem_03_09_2023.Book;
 import java.util.Arrays;
 import java.util.List;
 

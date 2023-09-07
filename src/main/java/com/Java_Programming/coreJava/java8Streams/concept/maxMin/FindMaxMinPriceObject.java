@@ -1,6 +1,6 @@
-package com.Java_Programming.coreJava.java8Streams.practice.maxMin;
+package com.Java_Programming.coreJava.java8Streams.concept.maxMin;
 
-import com.Java_Programming.coreJava.java8Streams.practice.reduce.Product;
+import com.Java_Programming.coreJava.java8Streams.concept.reduce.Product;
 import java.util.Arrays;
 import java.util.List;
 

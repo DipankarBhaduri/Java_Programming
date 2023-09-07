@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practice.map;
+package com.Java_Programming.coreJava.java8Streams.concept.map;
 
 
 import lombok.*;

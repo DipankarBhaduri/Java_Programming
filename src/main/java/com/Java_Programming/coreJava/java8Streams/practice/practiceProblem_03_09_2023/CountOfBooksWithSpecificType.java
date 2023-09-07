@@ -1,6 +1,6 @@
 package com.Java_Programming.coreJava.java8Streams.practice.practiceProblem_03_09_2023;
 
-import com.Java_Programming.coreJava.java8Streams.practice.map.Author;
+import com.Java_Programming.coreJava.java8Streams.concept.map.Author;
 
 import java.util.Arrays;
 import java.util.List;

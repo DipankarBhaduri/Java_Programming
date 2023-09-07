@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practice.maxWithComparator;
+package com.Java_Programming.coreJava.java8Streams.concept.maxWithComparator;
 
 import java.util.Arrays;
 import java.util.Comparator;

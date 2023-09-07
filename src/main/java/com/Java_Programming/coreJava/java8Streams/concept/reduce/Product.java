@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practice.reduce;
+package com.Java_Programming.coreJava.java8Streams.concept.reduce;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

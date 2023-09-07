@@ -1,6 +1,6 @@
 package com.Java_Programming.coreJava.java8Streams.practice.practiceProblem_03_09_2023;
 
-import com.Java_Programming.coreJava.java8Streams.practice.reduce.Product;
+import com.Java_Programming.coreJava.java8Streams.concept.reduce.Product;
 
 import java.util.Arrays;
 import java.util.List;

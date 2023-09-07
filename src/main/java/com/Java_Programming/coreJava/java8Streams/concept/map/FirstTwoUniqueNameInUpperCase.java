@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practice.map;
+package com.Java_Programming.coreJava.java8Streams.concept.map;
 
 import com.Java_Programming.coreJava.java8Streams.practice.practiceProblem_03_09_2023.Book;
 

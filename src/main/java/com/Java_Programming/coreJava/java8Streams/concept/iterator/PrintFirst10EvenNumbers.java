@@ -1,4 +1,4 @@
-package com.Java_Programming.coreJava.java8Streams.practice.iterator;
+package com.Java_Programming.coreJava.java8Streams.concept.iterator;
 
 import java.util.stream.Stream;
 

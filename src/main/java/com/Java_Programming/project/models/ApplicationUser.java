@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document( collection = "user")
+@Document(collection = "user")
 public class ApplicationUser extends RootEntity {
     private String name;
     private String email;

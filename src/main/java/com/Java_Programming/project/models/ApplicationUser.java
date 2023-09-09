@@ -19,7 +19,7 @@ public class ApplicationUser extends RootEntity {
     private List<String> contactNumber;
     private String password;
     private Date sqlDate = new Date() ;
-    private String accountStatus;
+    private String accountStatus = "active";
     private boolean isEmailVerified;
     private boolean isPhoneVerified;
 }

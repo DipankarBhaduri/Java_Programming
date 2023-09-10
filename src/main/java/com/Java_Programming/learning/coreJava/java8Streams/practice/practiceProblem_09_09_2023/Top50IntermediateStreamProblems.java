@@ -10,11 +10,6 @@ import java.util.stream.Collectors;
 public class Top50IntermediateStreamProblems {
     /**
      * @Questions :
-     * Given a list of employees, find the top N earners using a stream.
-     * Filter a list of strings to keep only those that contain both vowels and consonants.
-     * Given a list of tasks with due dates, find the tasks that are overdue using a stream.
-     * Write a stream to find the longest subsequence of increasing integers in a list.
-     * Given a list of words, find the most frequent letter using a stream.
      * Filter a list of integers to keep only those that are prime palindromes.
      * Given a list of transactions, find the total profit for each category using a stream.
      * Use a stream to generate all possible subsets of a set.
@@ -54,24 +49,54 @@ public class Top50IntermediateStreamProblems {
      * @param args
      */
     public static void main(String[] args) {
-        List<String> words = Arrays.asList(
-                "racecar",
-                "deifi",
-                "hello",
-                "level",
-                "world",
-                "civic",
-                "radar",
-                "apple",
-                "rotor",
-                "java",
-                "moon",
-                "noon",
-                "madam-madam"
-        );
+        List<String> inputList = new ArrayList<>();
+        inputList.add("apple");
+        inputList.add("banana");
+        inputList.add("cherry");
+        inputList.add("123");
+        inputList.add("grape");
+        inputList.add("a78 9");
+        inputList.add("kiwi");
 
-        String longestPalindrome = findLongestPalindromic(words);
-        System.out.println(longestPalindrome);
+        List<String> strings = getListFilterString(inputList);
+        strings.forEach(System.out::println);
+    }
+
+    /**---------------------------------------------------------------------------------------------------
+     * @Questions : Filter a list of strings to keep only those that contain both vowels and consonants....
+     * @param       strings
+     * @return
+     *
+     * @Rule :
+     *           ^ inside the square brackets negates the character class, so it matches characters that are not in the specified set.
+     *           aeiouAEIOU represents all uppercase and lowercase vowels.
+     *           0-9 represents all digits from 0 to 9
+     *           \\s represents whitespace characters, which include spaces, tabs, line breaks, and other similar whitespace characters.
+     */
+    private static List<String> getListFilterString (List<String> strings) {
+        return strings.stream().filter(string -> (string.matches(".*[aeiouAEIOU].*")) &&
+                (string.matches(".*[^aeiouAEIOU0-9\\s].*"))).collect(Collectors.toList());
+    }
+
+    /**--------------------------------------------------------------------------------
+     * @Questions : Given a list of employees, find the top N earners using a stream
+     * @param employees
+     * @return
+     */
+    public static List<Employee> getTopNEarners (List<Employee> employees, int n) {
+        return employees.stream()
+                .sorted((employee1, employee2) -> employee1.getSalary() > employee2.getSalary() ? -1 : 1)
+                .limit(n)
+                .collect(Collectors.toList());
+    }
+
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    static class Employee {
+        private String name;
+        private double salary;
     }
 
     /**--------------------------------------------------------------------------------

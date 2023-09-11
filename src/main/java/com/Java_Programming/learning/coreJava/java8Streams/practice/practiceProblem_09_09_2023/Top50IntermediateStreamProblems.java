@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 public class Top50IntermediateStreamProblems {
     /**
      * @Questions :
-     * Filter a list of integers to keep only those that are prime palindromes.
      * Given a list of transactions, find the total profit for each category using a stream.
      * Use a stream to generate all possible subsets of a set.
      * Given a list of students, find the student with the highest GPA in each department using a stream.
@@ -49,17 +48,40 @@ public class Top50IntermediateStreamProblems {
      * @param args
      */
     public static void main(String[] args) {
-        List<String> inputList = new ArrayList<>();
-        inputList.add("apple");
-        inputList.add("banana");
-        inputList.add("cherry");
-        inputList.add("123");
-        inputList.add("grape");
-        inputList.add("a78 9");
-        inputList.add("kiwi");
+        List<Integer> integers = Arrays.asList(2, 7, 11, 22, 131, 17, 151, 37, 181, 1991);
+        List<Integer> integerList = getPrimeAndPalindromeNumbers(integers);
+        integerList.forEach(System.out::println);
+    }
 
-        List<String> strings = getListFilterString(inputList);
-        strings.forEach(System.out::println);
+    /**------------------------------------------------------------------------------------
+     * @Questions : Filter a list of integers to keep only those that are prime palindromes
+     * @param integerList
+     * @return
+     */
+
+    private static List<Integer> getPrimeAndPalindromeNumbers (List<Integer> integerList) {
+        return integerList.stream().filter(Top50IntermediateStreamProblems::checkPrimePalindrome).collect(Collectors.toList());
+    }
+
+    private static boolean checkPrimePalindrome (int num) {
+        if(num <= 2){
+            return true;
+        }
+        int count = 0;
+        for(int i = 2; i < num ; i++) {
+            count = num % i == 0 ? (count+1) : count;
+        }
+        if ( count != 0 ){
+            return false;
+        }
+        int copy = num;
+        int rev = 0;
+        while (copy != 0) {
+            int rem = copy % 10 ;
+            rev = rev * 10 + rem;
+            copy = copy / 10;
+        }
+        return rev == num ;
     }
 
     /**---------------------------------------------------------------------------------------------------

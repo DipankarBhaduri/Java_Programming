@@ -27,4 +27,9 @@ public class UserController {
     public ResponseEntity<String> applicationUserLogin(@RequestBody ApplicationUser applicationUser) {
         return userServices.loginUser(applicationUser);
     }
+
+    @PostMapping("/test")
+    public ResponseEntity<String> applicationUserTest() {
+        return userServices.applicationUserTest();
+    }
 }

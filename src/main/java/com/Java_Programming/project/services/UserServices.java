@@ -8,11 +8,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Component
 public class UserServices {
+    Map<Object, ApplicationUser> applicationUserMap = new HashMap<>();
 
     @Autowired
     private UserRepository userRepository ;
@@ -34,5 +37,12 @@ public class UserServices {
 
         if (!applicationUsers.isEmpty()) return new ResponseEntity<>( "Success",HttpStatus.OK) ;
         return new ResponseEntity<>( "Failed",HttpStatus.NOT_FOUND);
+    }
+
+    public ResponseEntity<String> applicationUserTest() {
+        List<ApplicationUser> users = userRepository.findAll();
+        users.forEach(user -> applicationUserMap.put(user.get_id(), user));
+        users.stream().forEach(user -> user.setName("abc"));
+        return new ResponseEntity<>("Done", HttpStatus.ACCEPTED) ;
     }
 }

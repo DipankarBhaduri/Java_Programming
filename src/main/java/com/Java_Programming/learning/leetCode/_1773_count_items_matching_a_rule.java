@@ -12,13 +12,13 @@ public class _1773_count_items_matching_a_rule {
         data.add(new ArrayList<>(List.of("phone", "gold", "iphone")));
         String ruleKey = "color";
         String ruleValue = "silver";
-        int count = Solution.countMatches(data, ruleKey, ruleValue);
+        int count = Solution1.countMatches(data, ruleKey, ruleValue);
         System.out.println(count);
     }
 }
 
 
-class Solution {
+class Solution1 {
     public static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count = 0;
         for(List<String> str : items) {

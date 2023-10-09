@@ -1,0 +1,76 @@
+package com.Java_Programming.learning.leetCode;
+
+public class _2391_ {
+    public static void main(String[] args) {
+        String[] garbage = {"G","P","GP","GG"};
+        int [] travel = {2,4,3};
+        int ans = Solution.garbageCollection(garbage, travel);
+        System.out.println(ans);
+    }
+}
+
+class Solution {
+    public static int garbageCollection(String[] garbage, int[] travel) {
+        int count = 0;
+        int[] distance = new int[3];
+        distance[0] = -1;
+        distance[1] = -1;
+        distance[2] = -1;
+        int[] pref = new int [travel.length];
+        pref[0] = travel[0];
+        for(int i = 1 ; i < travel.length; i++) {
+            pref[i] = pref[i-1] + travel[i];
+        }
+        for (int i = 0; i < garbage.length; i++) {
+            String s = garbage[i];
+            while(!s.equals("")) {
+                char ch = s.charAt(0);
+                if(ch =='M') {
+                    if(i == 0) {
+                        distance[0] = -1;
+                    }else{
+                        if(distance[0] != pref[i-1]){
+                            int gap = 0;
+                            if(distance[0] > 0) {
+                                gap = distance[0];
+                            }
+                            count += pref[i-1] - gap;
+                            distance[0] = pref[i-1];
+                        }
+                    }
+                } else if(ch =='P') {
+                    if(i == 0) {
+                        distance[1] = -1;
+                    }else{
+                        if(distance[1] != pref[i-1]){
+                            int gap = 0;
+                            if(distance[1] > 0) {
+                                gap = distance[1];
+                            }
+                            count += pref[i-1] - gap;
+                            distance[1] = pref[i-1];
+                        }
+                    }
+                } else if(ch =='G') {
+                    if(i == 0) {
+                        distance[2] = -1;
+                    }else{
+                        if(distance[2] != pref[i-1]){
+                            int gap = 0;
+                            if(distance[2] > 0) {
+                                gap = distance[2];
+                            }
+                            count += pref[i-1] - gap;
+                            distance[2] = pref[i-1];
+                        }
+                    }
+                }
+                if(s.length() > 0) {
+                    s = s.substring(1);
+                }
+                count += 1;
+            }
+        }
+        return count;
+    }
+}

@@ -5,8 +5,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-@Repository
-@Component
-public interface RepositoryHandler<T, ID> extends MongoRepository<T, ID> {
-
-}
+//@Repository
+//@Component
+//public interface RepositoryHandler<T, ID> extends MongoRepository<T, ID> {
+//
+//}
